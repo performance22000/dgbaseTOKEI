@@ -1,3 +1,12 @@
+2014/11/1 a.ide
+
+・mainを未使用にする。
+
+・dgbaseTOKEI配下にメインプログラムを格納
+
+
+
+
 2014/8/24 aide
 
 LED時計 for Arduino & RTC
