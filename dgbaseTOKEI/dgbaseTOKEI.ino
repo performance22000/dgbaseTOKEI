@@ -123,9 +123,9 @@ void loop() {
     Serial.print(mi, DEC);
     Serial.print(':');
     Serial.print(s, DEC);
-     */
     
-//    Serial.println();
+    Serial.println();
+     */
 
     //センサはxx秒毎
     //気圧センサはレスポンスが早い（数ms？）
@@ -162,31 +162,6 @@ void loop() {
       dgbasePress prs(TIME_LEDCNT, &LED, chh, cmm, css);
       prs.execute((hpa * 10), 50, 250, true);
       prs.fader(30);
-/*
-      prs.execute(1043, 50, 250);
-      prs.fader(30);
-
-      prs.execute(1024, 50, 250);
-      prs.fader(30);
-
-      prs.execute(1014, 50, 250);
-      prs.fader(30);
-      
-      prs.execute(1013, 50, 250);
-      prs.fader(30);
-
-      prs.execute(1012.9, 50, 250);
-      prs.fader(30);
-
-      prs.execute(999.9, 50, 250);
-      prs.fader(30);
-
-      prs.execute(998, 50, 250);
-      prs.fader(30);
- */
-//      prs.execute(984, 50, 250);
-//      prs.fader(30);
-
       /*
       Serial.print("  hpa=");
       Serial.print(prs.mHpa, 1);
