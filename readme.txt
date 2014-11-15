@@ -1,3 +1,10 @@
+2014/11/15 a.ide
+
+・dgbaseTOKEI.h
+  mLEDオブジェクトをpublic化
+
+
+
 2014/11/1 a.ide
 
 ・mainを未使用にする。

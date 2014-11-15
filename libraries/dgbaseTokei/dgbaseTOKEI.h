@@ -15,7 +15,7 @@
 #include "WS2812.h"
 
 class dgbaseTOKEI {
-public: 
+public:
 	// for Time
 	dgbaseTOKEI(uint8_t pin, uint8_t cnt, WS2812* led);
 	// for Alarm
@@ -25,6 +25,10 @@ public:
 	/** fadeout */
 	void fader(int wait);
 
+	/** LED */
+	WS2812*	mLED;
+
+
 
 //protected:
 	/** LED position */
@@ -32,10 +36,10 @@ public:
 
 	/** led convert position */
 	cRGB getColor(int8_t pos);
-	
+
 	void setColor(int8_t pos, cRGB color);
 	void setColorBlack(int8_t pos);
-	
+
 	void setColorBlackAll();
 
 
@@ -87,7 +91,6 @@ public:
 
 
 	/** members */
-	WS2812*	mLED;
 	uint8_t	mLedCount;
 	cRGB	mColorbk;
 	cRGB	mColorhh;
